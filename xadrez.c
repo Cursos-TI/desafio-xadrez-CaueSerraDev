@@ -17,15 +17,31 @@ int main() {
 
     while (i < 5)
     {
-        {printf("Movimento do bispo na diagonal (cima, direita)\n");}
+        printf("Movimento do bispo na diagonal (cima, direita)\n");
         i++;
     }
     
     //mover a rainha 8 casas `esquerda
     do
     {
-        printf("Movimento da Raínha 8 casas à esquerda\n");
+        printf("Movimento da Raínha 8 casas à esquerda\n", i);
+        i++;
     } while (i < 8);
+
+    //Movimentação do Cavalo
+
+    int movimentoCompleto = 1; //flag para controlar o movimento em L
+
+    while (movimentoCompleto--)
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            printf("Baixo\n"); //movimento para cima duas vezes
+        }
+        
+        printf("Esquerda\n"); //imprime direita uma vez
+    }
+    
      
 
 
